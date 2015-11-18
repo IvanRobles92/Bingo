@@ -1,3 +1,8 @@
+<html>
+<head>
+    <title>BINGO!</title>
+</head>
+<body>
 <?php
 /**
  * Created by PhpStorm.
@@ -14,7 +19,7 @@ for ($i = 0; $i <= 10; $i++) {
         if($num==0) {
             echo"<td></td>";
         }else {
-            if($i==100 and $num<90) {
+            if($i==10 and $num<90) {
                 echo"<td></td>";
             }else {
                 if($num<=90) echo"<td>".$num."</td>";
@@ -27,4 +32,10 @@ for ($i = 0; $i <= 10; $i++) {
 }
 echo "</table>";
 ?>
+    <form action="Bingo.php" method="post">
+        <input type="button" id="genera" value="Obtener numero"/>
+        <input type="button" id="nuevo" value="NuevoJuego"/>
+    </form>
+</body>
+</html>
 
